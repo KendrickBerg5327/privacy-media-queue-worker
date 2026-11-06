@@ -1,0 +1,20 @@
+{
+  "name": "privacy-media-queue-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "publish": "tsx src/publish_ingestion.ts",
+    "worker": "tsx src/media_queue_worker.ts",
+    "test": "tsx --test test/media_queue_worker.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "@types/node": "^22.13.10"
+  }
+}
